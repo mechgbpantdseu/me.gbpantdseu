@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Dr. Ajay Lamba - Faculty Profile</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: #eef3f8;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, #06283d, #0b3d5c);
+      color: white;
+      padding: 28px 40px;
+      text-align: center;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.25);
+    }
+
+    header h1 {
+      font-size: 34px;
+      letter-spacing: 0.5px;
+      margin-bottom: 6px;
+      text-transform: uppercase;
+    }
+
+    header p {
+      font-size: 17px;
+      color: #d9ecff;
+    }
+
+    .profile-container {
+      max-width: 1050px;
+      margin: 35px auto;
+      background: white;
+      padding: 38px;
+      border-radius: 16px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+    }
+
+    .profile-top {
+      display: grid;
+      grid-template-columns: 240px 1fr;
+      gap: 35px;
+      align-items: center;
+      margin-bottom: 35px;
+    }
+
+    .profile-top img {
+      width: 220px;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 16px;
+      border: 5px solid #ffffff;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.22);
+      background: #f0f4f8;
+    }
+
+    .profile-info {
+      background: #f8fbff;
+      padding: 26px;
+      border-radius: 14px;
+      border-left: 5px solid #f4a261;
+    }
+
+    .profile-info h1 {
+      color: #06283d;
+      font-size: 30px;
+      margin-bottom: 12px;
+    }
+
+    .profile-info p {
+      margin-bottom: 9px;
+      text-align: left;
+    }
+
+    h2 {
+      color: #0b3d5c;
+      border-left: 6px solid #f4a261;
+      padding-left: 14px;
+      margin-top: 30px;
+      margin-bottom: 16px;
+      font-size: 27px;
+      line-height: 1.2;
+    }
+
+    p {
+      text-align: justify;
+      margin-bottom: 13px;
+      color: #333;
+    }
+
+    ul {
+      margin-left: 26px;
+      margin-bottom: 18px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-top: 28px;
+      padding: 11px 18px;
+      background: #0b3d5c;
+      color: white;
+      text-decoration: none;
+      border-radius: 25px;
+      font-weight: bold;
+      transition: all 0.3s ease;
+    }
+
+    .back-link:hover {
+      background: #f4a261;
+      color: #06283d;
+    }
+
+    footer {
+      background: #041c2c;
+      color: white;
+      text-align: center;
+      padding: 24px;
+      margin-top: 35px;
+    }
+
+    footer p {
+      color: #e6eef6;
+      text-align: center;
+      margin: 0;
+      font-size: 14px;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 25px;
+      }
+
+      header p {
+        font-size: 15px;
+      }
+
+      .profile-container {
+        padding: 28px 22px;
+        margin: 22px 12px;
+      }
+
+      .profile-top {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+
+      .profile-top img {
+        margin: auto;
+      }
+
+      .profile-info {
+        text-align: left;
+      }
+
+      p {
+        text-align: left;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Faculty Profile</h1>
+    <p>Department of Mechanical Engineering</p>
+  </header>
+
+  <div class="profile-container">
+
+    <div class="profile-top">
+      <img src="../faculty_pics/ajay.png" alt="Dr. Ajay Lamba">
+
+      <div class="profile-info">
+        <h1>Dr. Ajay Lamba</h1>
+        <p><strong>Designation:</strong> Assistant Professor</p>
+        <p>
+          <strong>Qualification:</strong>
+          B.Tech. (HMR Institute of Technology and Management, Delhi),
+          M.Tech. (J.C. Bose University of Science and Technology, YMCA, Faridabad),
+          Ph.D. (Delhi Technological University)
+        </p>
+        <p><strong>Email:</strong> faculty@college.edu.in</p>
+      </div>
+    </div>
+
+    <h2>Profile Summary</h2>
+
+    <p>
+      Dr. Ajay Lamba is an Assistant Professor in the Department of Mechanical Engineering
+      at G. B. Pant DSEU Campus, New Delhi. He has a total of 16 years of teaching and
+      research experience.
+    </p>
+
+    <p>
+      He has published research papers in SCI and Scopus-indexed journals and has also
+      contributed book chapters published by Springer.
+    </p>
+
+    <h2>Areas of Interest</h2>
+
+    <ul>
+      <li>Manufacturing</li>
+      <li>Production Engineering</li>
+      <li>Non-conventional Machining Methods</li>
+    </ul>
+
+    <a href="../index.html#faculty" class="back-link">← Back to Faculty Section</a>
+
+  </div>
+
+  <footer>
+    <p>&copy; 2026 Department of Mechanical Engineering, GB Pant DSEU Okhla Campus. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>

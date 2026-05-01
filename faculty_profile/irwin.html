@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Mr. Irwin Osmond Toppo - Faculty Profile</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #f5f7fa;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #0b3d5c;
+      color: white;
+      padding: 25px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 32px;
+      margin-bottom: 5px;
+    }
+
+    header p {
+      font-size: 18px;
+    }
+
+    .profile-container {
+      max-width: 1000px;
+      margin: 30px auto;
+      background: white;
+      padding: 35px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    }
+
+    .profile-top {
+      display: grid;
+      grid-template-columns: 220px 1fr;
+      gap: 30px;
+      align-items: center;
+      margin-bottom: 30px;
+    }
+
+    .profile-top img {
+      width: 200px;
+      height: 230px;
+      object-fit: cover;
+      border-radius: 10px;
+      border: 4px solid #f0f4f8;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+    }
+
+    .profile-top h1 {
+      color: #06283d;
+      margin-bottom: 10px;
+      font-size: 30px;
+    }
+
+    .profile-top p {
+      margin-bottom: 8px;
+    }
+
+    h2 {
+      color: #0b3d5c;
+      border-left: 5px solid #f4a261;
+      padding-left: 12px;
+      margin-top: 30px;
+      margin-bottom: 15px;
+      font-size: 26px;
+    }
+
+    p {
+      text-align: justify;
+      margin-bottom: 12px;
+    }
+
+    ul {
+      margin-left: 25px;
+      margin-bottom: 15px;
+    }
+
+    li {
+      margin-bottom: 6px;
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-top: 25px;
+      padding: 10px 16px;
+      background: #0b3d5c;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .back-link:hover {
+      background: #f4a261;
+      color: #06283d;
+    }
+
+    @media (max-width: 700px) {
+      .profile-top {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+
+      p {
+        text-align: left;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Faculty Profile</h1>
+    <p>Department of Mechanical Engineering</p>
+  </header>
+
+  <div class="profile-container">
+
+    <div class="profile-top">
+      <img src="../faculty_pics/irwin.jpeg" alt="Mr. Irwin Osmond Toppo">
+
+      <div>
+        <h1>Mr. Irwin Osmond Toppo</h1>
+        <p><strong>Designation:</strong> Assistant Professor</p>
+        <p><strong>Qualification:</strong> M.E. (IISc Bangalore), Ph.D. Scholar (IIT Delhi)</p>
+        <p><strong>Email:</strong> faculty@college.edu.in</p>
+      </div>
+    </div>
+
+    <h2>Profile Summary</h2>
+
+    <p>
+      Mr. Irwin O. Toppo is an accomplished mechanical engineer, academician, and researcher
+      with a strong background in teaching, research, innovation, and industry. He completed
+      his B.Tech. in Mechanical Engineering with distinction and earned his Master of Engineering
+      degree from the Indian Institute of Science, Bangalore.
+    </p>
+
+    <p>
+      He worked as a Design Engineer at Bharat Heavy Electricals Limited (BHEL) for 3.5 years,
+      where he was involved in the design of mechanical auxiliary systems for power plants.
+      He has over 11 years of teaching experience, including his academic contributions in the
+      Department of Energy Engineering at the Central University of Jharkhand and at G. B. Pant
+      Engineering College, Delhi.
+    </p>
+
+    <p>
+      Currently, he is pursuing his Ph.D. in the Department of Applied Mechanics at the Indian
+      Institute of Technology Delhi. He also holds one patent in the area of internal combustion
+      engines. His research interests include fluid and thermal engineering, hydrodynamic instability,
+      and computational fluid dynamics.
+    </p>
+
+    <h2>Areas of Interest</h2>
+
+    <ul>
+      <li>Hydrodynamic Instability</li>
+      <li>Computational Fluid Dynamics</li>
+      <li>Fluid Mechanics</li>
+      <li>Thermal Engineering</li>
+      <li>Heat and Mass Transfer</li>
+      <li>Internal Combustion Engines</li>
+    </ul>
+
+    <h2>Industrial Experience</h2>
+
+    <p>
+      Worked as a Design Engineer at Bharat Heavy Electricals Limited (BHEL) for 3.5 years.
+      His industrial work involved the design of mechanical auxiliary systems for power plants.
+    </p>
+
+    <h2>Teaching Experience</h2>
+
+    <p>
+      He has more than 11 years of teaching experience, including experience at the Department
+      of Energy Engineering, Central University of Jharkhand, and G. B. Pant Engineering College,
+      Delhi.
+    </p>
+
+    <h2>Research and Innovation</h2>
+
+    <p>
+      His research focuses on hydrodynamic instability, computational fluid dynamics, fluid
+      mechanics, and thermal engineering. He also holds one patent in the area of internal
+      combustion engines.
+    </p>
+
+    <a href="javascript:void(0);" onclick="goBackToFaculty()" class="back-link">
+      Back to Faculty Section
+    </a>
+
+  </div>
+
+  <script>
+    function goBackToFaculty() {
+      if (document.referrer !== "") {
+        window.history.back();
+      } else {
+        window.location.href = "../index.html#faculty";
+      }
+    }
+  </script>
+
+</body>
+</html>
