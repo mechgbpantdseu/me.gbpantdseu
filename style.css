@@ -312,6 +312,84 @@ section p {
   font-size: 14px;
 }
 
+/* ================= RECRUITING COMPANIES LOGO SECTION ================= */
+
+.recruiters-section {
+  margin: 28px 0 34px;
+  padding: 22px 18px;
+  background: linear-gradient(180deg, #f8fbff, #eef5fb);
+  border-radius: 16px;
+  border: 1px solid #d7e3ee;
+  box-shadow: 0 5px 16px rgba(0,0,0,0.08);
+}
+
+.recruiters-section h3 {
+  color: #06283d;
+  font-size: 22px;
+  text-align: center;
+  margin-bottom: 18px;
+  font-weight: 800;
+}
+
+.recruiter-logo-grid {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  gap: 12px;
+  align-items: center;
+}
+
+.recruiter-logo-card {
+  height: 68px;
+  background: #ffffff;
+  border-radius: 12px;
+  border: 1px solid #d7e3ee;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.07);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.recruiter-logo-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 7px 18px rgba(0,0,0,0.13);
+}
+
+.recruiter-logo-card img {
+  width: auto !important;
+  height: auto !important;
+  max-width: 105px !important;
+  max-height: 42px !important;
+  object-fit: contain !important;
+  display: block;
+}
+
+/* Individual logo corrections */
+.recruiter-logo-card img[alt="Blue Star Logo"] {
+  max-width: 115px !important;
+  max-height: 36px !important;
+}
+
+.recruiter-logo-card img[alt="Larsen and Toubro Logo"],
+.recruiter-logo-card img[alt="JLL Logo"] {
+  max-width: 95px !important;
+  max-height: 40px !important;
+}
+
+.recruiter-logo-card img[alt="Godrej Logo"] {
+  max-width: 100px !important;
+  max-height: 40px !important;
+}
+
+.recruiter-logo-card img[alt="Bosch Logo"] {
+  max-width: 105px !important;
+  max-height: 38px !important;
+}
+
+/* ================= PLACEMENT CARDS ================= */
+
 .placement-grid {
   display: grid;
   grid-template-columns: repeat(6, minmax(0, 1fr));
@@ -870,6 +948,10 @@ footer p {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
+  .recruiter-logo-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
   .lab-feature-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -970,6 +1052,20 @@ footer p {
   .lab-feature-grid,
   .lab-list-grid {
     grid-template-columns: 1fr;
+  }
+
+  .recruiter-logo-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+  }
+
+  .recruiter-logo-card {
+    height: 64px;
+  }
+
+  .recruiter-logo-card img {
+    max-width: 95px !important;
+    max-height: 38px !important;
   }
 
   .profile-round-button {
