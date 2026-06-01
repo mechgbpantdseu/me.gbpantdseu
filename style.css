@@ -93,6 +93,70 @@ nav a.apply-now-link:hover {
   box-shadow: 0 0 18px rgba(255,255,255,0.8);
 }
 
+
+/* ================= MOVING PLACEMENT HIGHLIGHT BOXES ================= */
+
+.hero-moving-stats {
+  width: 100%;
+  background: #ffffff;
+  padding: 14px 20px 12px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #dbe5ee;
+}
+
+.hero-stat-track {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  animation: heroStatsShortMove 4.5s ease-in-out infinite alternate;
+  max-width: 720px;
+}
+
+.hero-moving-stat-box {
+  width: 190px;
+  min-height: 70px;
+  background: #ffeb00;
+  color: #d00000;
+  padding: 9px 14px;
+  border-radius: 14px;
+  text-align: center;
+  border: 3px solid #ffffff;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.22);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.hero-moving-stat-box h3 {
+  font-size: 28px;
+  line-height: 1;
+  margin-bottom: 5px;
+  color: #d00000;
+  font-weight: 900;
+}
+
+.hero-moving-stat-box p {
+  font-size: 15px;
+  line-height: 1.12;
+  color: #d00000;
+  font-weight: 900;
+}
+
+@keyframes heroStatsShortMove {
+  0% {
+    transform: translateX(-28px);
+  }
+
+  100% {
+    transform: translateX(28px);
+  }
+}
+
 /* ================= HERO RIGHT-TO-LEFT MOVING BACKGROUND ================= */
 
 .hero {
@@ -287,7 +351,7 @@ section p {
 
 .placement-stats {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 18px;
   margin: 25px 0 30px;
 }
@@ -1106,5 +1170,44 @@ footer p {
 
   .map-box {
     min-height: 280px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .hero-moving-stats {
+    padding: 10px 10px;
+  }
+
+  .hero-stat-track {
+    gap: 8px;
+    max-width: 100%;
+    animation: heroStatsShortMoveMobile 4.5s ease-in-out infinite alternate;
+  }
+
+  .hero-moving-stat-box {
+    width: 30vw;
+    min-height: 60px;
+    padding: 7px 5px;
+    border-radius: 10px;
+  }
+
+  .hero-moving-stat-box h3 {
+    font-size: 22px;
+    margin-bottom: 4px;
+  }
+
+  .hero-moving-stat-box p {
+    font-size: 11px;
+  }
+}
+
+@keyframes heroStatsShortMoveMobile {
+  0% {
+    transform: translateX(-10px);
+  }
+
+  100% {
+    transform: translateX(10px);
   }
 }
